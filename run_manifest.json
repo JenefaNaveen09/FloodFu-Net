@@ -1,0 +1,224 @@
+{
+  "root": "/content/drive/MyDrive/FloodFuNet",
+  "dataset": "Sen1Floods11 (Hand-Labeled)",
+  "source": "https://storage.googleapis.com/sen1floods11/v1.1",
+  "per_split_cap": {
+    "train": 300,
+    "val": 60,
+    "test": 60
+  },
+  "stage_5_metrics": {
+    "iou_flood": 0.7861435568122759,
+    "f1_flood": 0.880269174125403,
+    "precision": 0.8953193314351747,
+    "recall": 0.8657166328668043,
+    "mcc": 0.8633049317095018,
+    "overall_acc": 0.9700294156792322
+  },
+  "methods": [
+    "Otsu (VV)",
+    "NDWI threshold",
+    "Random Forest",
+    "U-Net (SAR only)",
+    "U-Net (optical only)",
+    "U-Net (early fusion)",
+    "FloodFu-Net (ours)"
+  ],
+  "headline_metrics_by_method": {
+    "Otsu (VV)": {
+      "iou": 0.1785,
+      "f1": 0.3029,
+      "precision": 0.196,
+      "recall": 0.6654,
+      "mcc": 0.18,
+      "roc_auc": 0.6981
+    },
+    "NDWI threshold": {
+      "iou": 0.7273,
+      "f1": 0.8421,
+      "precision": 0.8983,
+      "recall": 0.7925,
+      "mcc": 0.8228,
+      "roc_auc": 0.983
+    },
+    "Random Forest": {
+      "iou": 0.6452,
+      "f1": 0.7844,
+      "precision": 0.6808,
+      "recall": 0.925,
+      "mcc": 0.7595,
+      "roc_auc": 0.9561
+    },
+    "U-Net (SAR only)": {
+      "iou": 0.5926,
+      "f1": 0.7442,
+      "precision": 0.8252,
+      "recall": 0.6776,
+      "mcc": 0.7154,
+      "roc_auc": 0.9301
+    },
+    "U-Net (optical only)": {
+      "iou": 0.7766,
+      "f1": 0.8743,
+      "precision": 0.8873,
+      "recall": 0.8616,
+      "mcc": 0.8564,
+      "roc_auc": 0.9825
+    },
+    "U-Net (early fusion)": {
+      "iou": 0.7605,
+      "f1": 0.864,
+      "precision": 0.8727,
+      "recall": 0.8554,
+      "mcc": 0.8444,
+      "roc_auc": 0.9834
+    },
+    "FloodFu-Net (ours)": {
+      "iou": 0.7861,
+      "f1": 0.8803,
+      "precision": 0.8953,
+      "recall": 0.8657,
+      "mcc": 0.8633,
+      "roc_auc": 0.9625
+    }
+  },
+  "boundary_quality": {
+    "Otsu (VV)": {
+      "HD95": 53.78549908720845,
+      "BF1@2px": 0.33923453151975125
+    },
+    "NDWI threshold": {
+      "HD95": 25.326284465707698,
+      "BF1@2px": 0.6459228049700809
+    },
+    "Random Forest": {
+      "HD95": 27.64990954255171,
+      "BF1@2px": 0.6718662515409899
+    },
+    "U-Net (SAR only)": {
+      "HD95": 39.176483237275036,
+      "BF1@2px": 0.4863080317089532
+    },
+    "U-Net (optical only)": {
+      "HD95": 19.990356938470526,
+      "BF1@2px": 0.7504097180088688
+    },
+    "U-Net (early fusion)": {
+      "HD95": 22.63923169107475,
+      "BF1@2px": 0.7095673510200926
+    },
+    "FloodFu-Net (ours)": {
+      "HD95": 18.190635025262296,
+      "BF1@2px": 0.7659553296789113
+    }
+  },
+  "per_event": {
+    "Otsu (VV)": {
+      "Ghana": 0.07372496313452732,
+      "India": 0.30798221079382265,
+      "Mekong": 0.2460615895853075,
+      "Nigeria": 0.24486877412579847,
+      "Pakistan": 0.15493592732866776,
+      "Paraguay": 0.10960567755447964,
+      "Somalia": 0.046717015480057966
+    },
+    "NDWI threshold": {
+      "Ghana": 0.5007811989473121,
+      "India": 0.8066078620009298,
+      "Mekong": 0.9268290375080428,
+      "Nigeria": 0.8866600943480776,
+      "Pakistan": 0.5747381702394299,
+      "Paraguay": 0.5430132604784433,
+      "Somalia": 0.6088634184209325
+    },
+    "Random Forest": {
+      "Ghana": 0.6575428571428571,
+      "India": 0.7335194515677342,
+      "Mekong": 0.9174251148231968,
+      "Nigeria": 0.9068575428455303,
+      "Pakistan": 0.4023310984176124,
+      "Paraguay": 0.5616719203285317,
+      "Somalia": 0.3322582546673291
+    },
+    "U-Net (SAR only)": {
+      "Ghana": 0.4615031649292891,
+      "India": 0.6881036160814554,
+      "Mekong": 0.841259077293406,
+      "Nigeria": 0.8669476172930484,
+      "Pakistan": 0.1660909946051658,
+      "Paraguay": 0.5409345781437354,
+      "Somalia": 0.3228477942006093
+    },
+    "U-Net (optical only)": {
+      "Ghana": 0.5700312736532673,
+      "India": 0.830503113621239,
+      "Mekong": 0.946514904032911,
+      "Nigeria": 0.9326170214488717,
+      "Pakistan": 0.6928727289431977,
+      "Paraguay": 0.6344258758446402,
+      "Somalia": 0.6334396305256212
+    },
+    "U-Net (early fusion)": {
+      "Ghana": 0.606982769256076,
+      "India": 0.8150773736672725,
+      "Mekong": 0.9211484658074577,
+      "Nigeria": 0.9284997211377579,
+      "Pakistan": 0.6038716336763613,
+      "Paraguay": 0.624371353484184,
+      "Somalia": 0.7355715074544451
+    },
+    "FloodFu-Net (ours)": {
+      "Ghana": 0.597633379818414,
+      "India": 0.8521347182680786,
+      "Mekong": 0.9441470815072067,
+      "Nigeria": 0.9369618622844468,
+      "Pakistan": 0.6200821259083827,
+      "Paraguay": 0.6457181056664937,
+      "Somalia": 0.8431278866061475
+    }
+  },
+  "checkpoints": {
+    "stage2_download.ok": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage2_download.ok",
+    "stage3_indices.ok": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage3_indices.ok",
+    "stage4_patches.ok": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage4_patches.ok",
+    "stage5_floodfunet_best.pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage5_floodfunet_best.pt",
+    "stage5_history.json": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage5_history.json",
+    "stage5_floodfunet_latest.pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage5_floodfunet_latest.pt",
+    "stage7_maps.npz": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage7_maps.npz",
+    "stage1_env.ok": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage1_env.ok",
+    "stage6_metrics.json": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage6_metrics.json",
+    "stage7_maps_v2.npz": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage7_maps_v2.npz",
+    "baseline_rf.npy": "/content/drive/MyDrive/FloodFuNet/checkpoints/baseline_rf.npy",
+    "baseline_U-Net_(SAR_only).pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/baseline_U-Net_(SAR_only).pt",
+    "baseline_U-Net_(optical_only).pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/baseline_U-Net_(optical_only).pt",
+    "baseline_U-Net_(early_fusion).pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/baseline_U-Net_(early_fusion).pt",
+    "stage8_all_results.json": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage8_all_results.json",
+    "stage8_test_predictions.npz": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage8_test_predictions.npz",
+    "stage8_comparison_table.csv": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage8_comparison_table.csv",
+    "ablate_FloodFu-Net_(no-gate).pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/ablate_FloodFu-Net_(no-gate).pt",
+    "ablate_FloodFu-Net_(no-gate)_best.pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/ablate_FloodFu-Net_(no-gate)_best.pt",
+    "ablate_FloodFu-Net_(no-gate)_latest.pt": "/content/drive/MyDrive/FloodFuNet/checkpoints/ablate_FloodFu-Net_(no-gate)_latest.pt",
+    "stage10_regions.json": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage10_regions.json",
+    "stage10_per_region.csv": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage10_per_region.csv",
+    "stage10_boundary.json": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage10_boundary.json"
+  },
+  "figures": [
+    "/content/drive/MyDrive/FloodFuNet/figures/stage10_diagnostics.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage10_failure_cases.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage10_qualitative_grid.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage11_composite.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage2_quicklook.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage3_indices.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage4_dataset.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage5_training.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage6_eval.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage7_flood_maps.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage8_head_to_head.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage8_roc_pr_radar.png",
+    "/content/drive/MyDrive/FloodFuNet/figures/stage9_ablation.png"
+  ],
+  "composite_pdf": "/content/drive/MyDrive/FloodFuNet/figures/stage11_composite.pdf",
+  "comparison_csv": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage8_comparison_table.csv",
+  "per_region_csv": "/content/drive/MyDrive/FloodFuNet/checkpoints/stage10_per_region.csv",
+  "saved_at": "2026-09-22T06:25:17.019849"
+}
